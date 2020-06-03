@@ -58,7 +58,7 @@ You can also create an ISE by using the [sample Azure Resource Manager quickstar
     **Address prefix**: 0.0.0.0/0<br>
     **Next hop**: Internet
 
-   * If you use Network Virtual Appliances, make sure that you have not enabled SSL termination or traffic inspection for traffic originating from ISE Subnet.
+   * If you use a [network virtual appliance (NVA)](../virtual-network/virtual-networks-udr-overview.md#user-defined), make sure that you don't enable TLS/SSL termination or change the outbound TLS/SSL traffic. Also, make sure that you don't enable inspection for traffic that originates from your ISE's subnet. For more information, see [Virtual network traffic routing](../virtual-network/virtual-networks-udr-overview.md).
 
 * If you want to use custom DNS servers for your Azure virtual network, [set up those servers by following these steps](../virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances.md) before you deploy your ISE to your virtual network. For more information about managing DNS server settings, see [Create, change, or delete a virtual network](../virtual-network/manage-virtual-network.md#change-dns-servers).
 
