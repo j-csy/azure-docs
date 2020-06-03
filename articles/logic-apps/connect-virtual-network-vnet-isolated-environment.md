@@ -52,7 +52,7 @@ You can also create an ISE by using the [sample Azure Resource Manager quickstar
 
   * Make sure that your virtual network [enables access for your ISE](#enable-access) so that your ISE can work correctly and stay accessible.
 
-  * If you use [ExpressRoute](../expressroute/expressroute-introduction.md), which provides a private connection to Microsoft cloud services that's facilitated by the connectivity provider, make sure that you're not using [forced tunneling](../app-service/app-service-security-controls.md). Otherwise, if this capability is enabled, you must [create a route table](../virtual-network/manage-route-table.md) that has the following route and then link the route table to each subnet that's used by your ISE:
+  * If you use [ExpressRoute](../expressroute/expressroute-introduction.md), which provides a private connection to Microsoft cloud services that's facilitated by the connectivity provider, make sure that you're not using [forced tunneling](../firewall/forced-tunneling.md). Otherwise, if this capability is enabled, you must [create a route table](../virtual-network/manage-route-table.md) that has the following route and then link the route table to each subnet that's used by your ISE:
 
     **Name**: <*route-name*><br>
     **Address prefix**: 0.0.0.0/0<br>
